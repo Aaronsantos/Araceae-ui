@@ -2,11 +2,13 @@
 
 Simple React component libary focused on minimalism.
 
+This project was inspired by the [.pulse](https://pulse.heartbeat.ua/) Design System and was made just for fun and learning.
+
 ## Project Roadmap:
-  -  <s>Create initial project structure</s>
-  - <s>Create initial build script</s>
-  - add StoryBook
-  - Add and configure Jest and Husky
-  - Add a CI/CD
-  - basic components implementation
+  -  [X] Create initial project structure
+  - [X] Create initial build script
+  - [ ] add StoryBook
+  - [ ] Add and configure Jest and Husky
+  - [ ] Add a CI/CD
+  - [ ] basic components implementation
 
