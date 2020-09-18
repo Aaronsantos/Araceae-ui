@@ -7,7 +7,7 @@ This project was inspired by the [.pulse](https://pulse.heartbeat.ua/) Design Sy
 ## Project Roadmap:
   -  [X] Create initial project structure
   - [X] Create initial build script
-  - [ ] add StoryBook
+  - [X] add StoryBook
   - [ ] Add and configure Jest and Husky
   - [ ] Add a CI/CD
   - [ ] basic components implementation

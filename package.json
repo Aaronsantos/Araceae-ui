@@ -24,10 +24,34 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf build && NODE_ENV=production && tsc --project tsconfig-build.json",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false --passWithNoTests",
+    "coverage": "react-scripts test --coverage --watchAll=false --passWithNoTests",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "lint": "tslint --fix -p ./tsconfig.json"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/*/*/*.ts",
+      "src/*/*/*.tsx",
+      "!src/**/stories.tsx"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "files": 95,
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run test",
+      "pre-push": "npm run lint && npm run coverage"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -54,6 +78,8 @@
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.21",
     "babel-loader": "^8.1.0",
-    "react-is": "^16.13.1"
+    "husky": "^4.3.0",
+    "react-is": "^16.13.1",
+    "tslint": "^6.1.3"
   }
 }
