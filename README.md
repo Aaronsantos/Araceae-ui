@@ -1,4 +1,4 @@
-# Biophilic-ui
+# Araceae-ui
 
 Simple React component libary focused on minimalism.
 
