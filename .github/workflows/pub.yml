@@ -4,13 +4,15 @@ on:
   release:
     types: [published]
 
-strategy:
-      matrix:
-        node-version: [14.x]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+  
+    strategy:
+      matrix:
+        node-version: [14.x]
+
     steps:
       - uses: actions/checkout@v1
 
