@@ -19,12 +19,12 @@ jobs:
         uses: actions/setup-node@v1
         with: 
           node-version: ${{ matrix.node-version }}
-          always-auth: true
+
+      - name: Authenticate to NPM
+        run: npm login -u ${{secrets.NPM_USER}} -p ${{secrets.NPM_PASSWORD}} -e ${{secrets.NPM_EMAIL}} --always-auth
 
       - name: Install dependencies
-        run: yarn
+        run: npm i
       
       - name: Publish package
-        run: yarn publish --non-interactive
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        run: npm publish
