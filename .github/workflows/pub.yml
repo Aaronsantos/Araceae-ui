@@ -21,14 +21,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - uses: einaregilsson/build-number@v1
-        with:
-          token: ${{secrets.github_token}}
-
       - name: Install dependencies
         run: yarn
       
       - name: Publish package
-        run: yarn publish --version ${{BUILD_NUMBER}}
+        run: yarn publish --version ${{git describe --abbrev=0}}
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
