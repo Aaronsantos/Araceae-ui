@@ -45,22 +45,21 @@ export const Container = styled.button<ButtonProps>`
   padding: 9px 23px 11px;
   border: solid;
   border-width: 1px;
-  color: ${({ color = 'black', theme }) =>
-    theme.colors[themeColorKeys[color].color]};
-  background: ${({ color = 'black', theme }) =>
-    theme.colors[themeColorKeys[color].bgColor]};
-  border-color: ${({ color = 'black', theme }) =>
-    theme.colors[themeColorKeys[color].border]};
+  color: ${({ color, theme }) => theme.colors[themeColorKeys[color!].color]};
+  background: ${({ color, theme }) =>
+    theme.colors[themeColorKeys[color!].bgColor]};
+  border-color: ${({ color, theme }) =>
+    theme.colors[themeColorKeys[color!].border]};
 
   &:hover {
     background-color: white;
     color: rgb(25, 25, 25);
     transition: all 0.1s cubic-bezier(0.77, 0, 0.175, 1);
-    color: ${({ color = 'black', theme }) =>
-      theme.colors[themeColorKeys[color].colorHover]};
-    background: ${({ color = 'black', theme }) =>
-      theme.colors[themeColorKeys[color].bgColorHover]};
-    border-color: ${({ color = 'black', theme }) =>
-      theme.colors[themeColorKeys[color].borderHover]};
+    color: ${({ color, theme }) =>
+      theme.colors[themeColorKeys[color!].colorHover]};
+    background: ${({ color, theme }) =>
+      theme.colors[themeColorKeys[color!].bgColorHover]};
+    border-color: ${({ color, theme }) =>
+      theme.colors[themeColorKeys[color!].borderHover]};
   }
 `;
