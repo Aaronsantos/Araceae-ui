@@ -1,26 +1,24 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-import Button from '.';
+import { Story } from '@storybook/react';
+import Button, { ButtonProps } from '.';
 import ThemeProvider from '../../providers/Theme';
 
-storiesOf('Button', module)
-  .add('Default button', () => (
-    <ThemeProvider>
-      <Button>Default</Button>
-    </ThemeProvider>
-  ))
-  .add('White button', () => (
-    <ThemeProvider>
-      <Button color="white">White</Button>
-    </ThemeProvider>
-  ))
-  .add('Brand button', () => (
-    <ThemeProvider>
-      <Button color="brand">Brand primary</Button>
-    </ThemeProvider>
-  ))
-  .add('Wide button', () => (
-    <ThemeProvider>
-      <Button wide>wide</Button>
-    </ThemeProvider>
-  ));
+const Template: Story<ButtonProps> = ({ children, ...args }) => (
+  <ThemeProvider>
+    <Button {...args}>{children}</Button>
+  </ThemeProvider>
+);
+
+export default {
+  title: 'Button',
+  component: Button,
+};
+
+export const Default = Template.bind({});
+Default.args = { children: 'Default' };
+
+export const Outlined = Template.bind({});
+Outlined.args = { children: 'Outlines!', color: 'white' };
+
+export const BrandColor = Template.bind({});
+BrandColor.args = { children: 'Brand', color: 'brand' };

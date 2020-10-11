@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { TButton } from '.';
+import { ButtonProps } from '.';
 
 const themeColorKeys: object = {
   black: {
@@ -29,7 +29,7 @@ const themeColorKeys: object = {
   },
 };
 
-export const Container = styled.button<TButton>`
+export const Container = styled.button<ButtonProps>`
   display: inline-block;
   vertical-align: middle;
   text-align: center;
