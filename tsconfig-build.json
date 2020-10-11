@@ -4,4 +4,12 @@
     "rootDir": "./src",
     "noEmit": false
   },
+  "exclude": [
+    "__tests__",
+    "**/**/*.test.tsx",
+    "**/**/*.test.ts",
+    "**/**/stories.tsx",
+    "__snapshots__",
+    "__mocks__"
+  ]
 }

@@ -9,6 +9,6 @@ This project was inspired by the [.pulse](https://pulse.heartbeat.ua/) Design Sy
   - [X] Create initial build script
   - [X] add StoryBook
   - [X] Add and configure Jest and Husky
-  - [ ] Add a CI/CD
+  - [X] Add a CI/CD
   - [ ] basic components implementation
 
