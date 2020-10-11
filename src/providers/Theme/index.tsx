@@ -1,10 +1,12 @@
 import React from 'react';
 import { ThemeProvider as StyledProvider } from 'styled-components';
 
+import { GlobalStyles } from './globalStyle';
 import defaultTheme from './theme';
+import './typographyImports.css';
 // import { Container } from './styles';
 
-type TTheme = typeof defaultTheme;
+export type TTheme = typeof defaultTheme;
 
 declare module 'styled-components' {
   type Theme = TTheme;
@@ -18,6 +20,11 @@ type TThemeProvider = {
 const ThemeProvider: React.FC<TThemeProvider> = ({
   children,
   theme = defaultTheme,
-}) => <StyledProvider theme={theme}>{children}</StyledProvider>;
+}) => (
+  <StyledProvider theme={theme}>
+    <GlobalStyles />
+    {children}
+  </StyledProvider>
+);
 
 export default ThemeProvider;
