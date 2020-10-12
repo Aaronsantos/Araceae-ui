@@ -19,17 +19,17 @@
     "noEmit": true,
     "jsx": "react",
     "outDir": "./build",
+    "rootDir": "./src",
     "declaration": true,
+    "noImplicitAny": false,
   },
   "include": [
-    "src"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "@types/*.ts",
   ],
   "exclude": [
-    "node_modules",
-    "src/example",
-    "src/__mocks__",
-    "@types",
-    "**/**/*.test.tsx",
-    "**/**/setupTests.ts"
+    "build",
+    "coverage"
   ]
 }
