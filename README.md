@@ -1,4 +1,4 @@
-# Araceae-ui [![npm-version](https://img.shields.io/github/v/release/Aaronsantos/Araceae-ui?label=npmstyle=flat-square)] [![codecov](https://codecov.io/gh/Aaronsantos/Araceae-ui/branch/master/graph/badge.svg)](https://codecov.io/gh/Aaronsantos/Araceae-ui)
+# Araceae-ui ![npm](https://img.shields.io/npm/v/araceae-ui) [![codecov](https://codecov.io/gh/Aaronsantos/Araceae-ui/branch/master/graph/badge.svg)](https://codecov.io/gh/Aaronsantos/Araceae-ui)
 
 
 
