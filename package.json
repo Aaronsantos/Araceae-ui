@@ -37,16 +37,7 @@
       "src/*/*/*.ts",
       "src/*/*/*.tsx",
       "!src/**/*.stories.tsx"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "files": 95,
-        "branches": 80,
-        "functions": 80,
-        "lines": 80,
-        "statements": 80
-      }
-    }
+    ]
   },
   "husky": {
     "hooks": {
