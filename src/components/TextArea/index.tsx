@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ChangeEvent } from 'react';
 
 import { Container } from './styles';
 
@@ -7,7 +7,7 @@ export type TextAreaProps = {
   value?: string | number;
   placeholder?: string;
   defaultValue?: string;
-  onChange(event: InputEvent): void;
+  onChange(event: ChangeEvent<HTMLTextAreaElement>): void;
 };
 
 const TextArea: React.FC<TextAreaProps> = (props: TextAreaProps) => {

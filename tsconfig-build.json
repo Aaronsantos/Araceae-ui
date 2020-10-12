@@ -8,8 +8,9 @@
     "__tests__",
     "**/**/*.test.tsx",
     "**/**/*.test.ts",
-    "**/**/stories.tsx",
+    "**/**/*.stories.tsx",
     "__snapshots__",
-    "__mocks__"
+    "__mocks__",
+    "node_modules"
   ]
 }

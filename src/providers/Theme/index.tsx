@@ -8,11 +8,6 @@ import './typographyImports.css';
 
 export type TTheme = typeof defaultTheme;
 
-declare module 'styled-components' {
-  type Theme = TTheme;
-  export type DefaultTheme = Theme;
-}
-
 type TThemeProvider = {
   theme?: TTheme;
 };
