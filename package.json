@@ -29,7 +29,7 @@
     "coverage": "react-scripts test --coverage --watchAll=false --passWithNoTests",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
+    "build-storybook": "build-storybook -s public && gh-pages -d storybook-static",
     "lint": "eslint --ext ts,tsx src/*"
   },
   "jest": {
@@ -78,6 +78,7 @@
     "eslint-plugin-react": "^7.21.4",
     "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-testing-library": "^3.9.0",
+    "gh-pages": "^3.1.0",
     "husky": "^4.3.0",
     "jest-styled-components": "^7.0.3",
     "prettier": "^2.1.2",
