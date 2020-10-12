@@ -16,5 +16,7 @@ Made with:
 
 ```
   yarn add araceae-ui
+  # or with npm:
+  npm i araceae-ui
 ```
 You can check the available components on Storybook.
