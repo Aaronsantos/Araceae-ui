@@ -1,4 +1,4 @@
-# Araceae-ui ![npm](https://img.shields.io/npm/v/araceae-ui) [![codecov](https://codecov.io/gh/Aaronsantos/Araceae-ui/branch/master/graph/badge.svg)](https://codecov.io/gh/Aaronsantos/Araceae-ui)
+# Araceae-ui [![npm](https://img.shields.io/npm/v/araceae-ui)](https://www.npmjs.com/package/araceae-ui) [![codecov](https://codecov.io/gh/Aaronsantos/Araceae-ui/branch/master/graph/badge.svg)](https://codecov.io/gh/Aaronsantos/Araceae-ui) [![Storybook](https://img.shields.io/badge/storybook-%232A0481?logo=storybook)](https://aaronsantos.github.io/Araceae-ui/)
 
 
 
