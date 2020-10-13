@@ -1,17 +1,17 @@
 import React from 'react';
 import { Story } from '@storybook/react';
-import TextArea from '.';
-import ThemeProvider from '../../providers/Theme';
+import InputField from '.';
+import ThemeProvider from '../Theme';
 
 const Template: Story = ({ ...args }) => (
   <ThemeProvider>
-    <TextArea {...args} onChange={() => undefined} />
+    <InputField {...args} onChange={() => undefined} />
   </ThemeProvider>
 );
 
 export default {
-  title: 'TextArea',
-  component: TextArea,
+  title: 'InputField',
+  component: InputField,
 };
 
 export const Default = Template.bind({});

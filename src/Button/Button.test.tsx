@@ -1,9 +1,9 @@
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 
-import { withThemeProvider } from '../../__mocks__/utils/RenderWithProviders';
+import { withThemeProvider } from '../__mocks__/utils/RenderWithProviders';
 import Button from '.';
-import defaultTheme from '../../providers/Theme/theme';
+import defaultTheme from '../Theme/theme';
 
 describe('Button Component', () => {
   it('Should render default color button', () => {

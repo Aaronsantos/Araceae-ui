@@ -1,2 +1,7 @@
-export { default as LogoImg } from './img/logo.svg';
-export { default as FloatingHeadImg } from './img/face1.png';
+import LogoImg from './static/img/logo.svg';
+import FloatingHeadImg from './static/img/face1.png';
+
+export default {
+  LogoImg,
+  FloatingHeadImg,
+};

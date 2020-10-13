@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story } from '@storybook/react';
 import Button, { ButtonProps } from '.';
-import ThemeProvider from '../../providers/Theme';
+import ThemeProvider from '../Theme';
 
 const Template: Story<ButtonProps> = ({ children, ...args }) => (
   <ThemeProvider>

@@ -1,6 +1,6 @@
 {
   "name": "araceae-ui",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "types": "index.d.ts",
   "module": "build/index.js",
   "main": "index.js",
@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf build && NODE_ENV=production && tsc --project tsconfig-build.json",
+    "build": "rm -rf build && NODE_ENV=production && tsc --project tsconfig-build.json && cp -R ./src/assets/static ./build/assets",
     "test": "react-scripts test --watchAll=false --passWithNoTests",
     "coverage": "react-scripts test --coverage --watchAll=false --passWithNoTests",
     "eject": "react-scripts eject",

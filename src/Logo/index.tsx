@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as LogoImg } from '../../assets/img/logo.svg';
+import { ReactComponent as LogoImg } from '../assets/static/img/logo.svg';
 import { Container } from './styles';
 
 const Logo: React.FC = () => {

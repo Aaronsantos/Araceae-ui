@@ -13,6 +13,21 @@ jobs:
       uses: actions/setup-node@master
       with:
         node-version: 14.x
+
+    - name: Depoy Storybook
+      run: |
+          git config --global user.name $user_name
+          git config --global user.email $user_email
+          git remote set-url origin https://Aaronsantos:${github_token}@github.com/${repository}.git
+          yarn
+          yarn run build-storybook
+          yarn run deploy-storybook
+      env:
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+          repository: ${{ github.repository }}
+
     - name: Publish if version has been updated
       uses: pascalgn/npm-publish-action@06e0830ea83eea10ed4a62654eeaedafb8bf50fc
       with:
@@ -23,15 +38,3 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-
-    - name: Depoy Storybook
-      run: |
-          git config --global user.name $user_name
-          git config --global user.email $user_email
-          git remote set-url origin https://Aaronsantos:${github_token}@github.com/${repository}.git
-          yarn run deploy-storybook
-      env:
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
-          repository: ${{ github.repository }}

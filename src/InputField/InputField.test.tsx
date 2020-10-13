@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, fireEvent, cleanup } from '@testing-library/react';
 
-import { withThemeProvider } from '../../__mocks__/utils/RenderWithProviders';
-import defaultTheme from '../../providers/Theme/theme';
+import { withThemeProvider } from '../__mocks__/utils/RenderWithProviders';
+import defaultTheme from '../Theme/theme';
 import InputField from '.';
 
 afterEach(() => cleanup());

@@ -1,18 +1,18 @@
 import React from 'react';
 import { Story } from '@storybook/react';
-import Logo from '.';
-import ThemeProvider from '../../providers/Theme';
+import TextArea from '.';
+import ThemeProvider from '../Theme';
 
 const Template: Story = ({ ...args }) => (
   <ThemeProvider>
-    <Logo {...args} />
+    <TextArea {...args} onChange={() => undefined} />
   </ThemeProvider>
 );
 
 export default {
-  title: 'Logo',
-  component: Logo,
+  title: 'TextArea',
+  component: TextArea,
 };
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = { placeholder: 'Default' };
