@@ -1,6 +1,6 @@
 {
   "name": "araceae-ui",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "types": "index.d.ts",
   "module": "build/index.js",
   "main": "build/index.js",
@@ -16,7 +16,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public && gh-pages -d storybook-static",
     "lint": "eslint --ext ts,tsx src/*",
-    "prepublishOnly": "yarn run build"
+    "prepublishOnly": "yarn && yarn run build"
   },
   "jest": {
     "collectCoverageFrom": [
