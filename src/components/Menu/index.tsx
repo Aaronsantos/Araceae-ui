@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import { ReactComponent as MenuIcon } from '../../assets/icons/Menu.svg';
+import { ReactComponent as MenuIcon } from '../../assets/static/icons/Menu.svg';
 import Logo from '../Logo';
 
 import { Container, MenuContainer } from './styles';

@@ -3,7 +3,7 @@ import * as providers from './providers';
 import * as assets from './assets';
 
 export default {
-  components,
-  providers,
-  assets,
+  ...components,
+  ...providers,
+  ...assets,
 };
