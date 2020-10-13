@@ -1,11 +1,12 @@
 {
   "name": "araceae-ui",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "types": "index.d.ts",
   "module": "build/index.js",
-  "main": "build/index.js",
+  "main": "index.js",
   "files": [
-    "build"
+    "build",
+    "index.js"
   ],
   "scripts": {
     "start": "react-scripts start",
