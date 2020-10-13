@@ -5,7 +5,7 @@ import ThemeProvider from '../../providers/Theme';
 
 const Template: Story = ({ ...args }) => (
   <ThemeProvider>
-    <Menu {...args} />
+    <Menu itens={[]} {...args} />
   </ThemeProvider>
 );
 
