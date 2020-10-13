@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "./static/css/main.96636b33.chunk.css",
-    "main.js": "./main.a2ccf6d92bf9dbb9bd64.bundle.js",
+    "main.js": "./main.e434be08e260a75ab142.bundle.js",
     "main.css.map": "./static/css/main.96636b33.chunk.css.map",
-    "main.js.map": "./main.a2ccf6d92bf9dbb9bd64.bundle.js.map",
-    "runtime~main.js": "./runtime~main.a2ccf6d92bf9dbb9bd64.bundle.js",
-    "runtime~main.js.map": "./runtime~main.a2ccf6d92bf9dbb9bd64.bundle.js.map",
-    "vendors~main.js": "./vendors~main.a2ccf6d92bf9dbb9bd64.bundle.js",
-    "vendors~main.js.map": "./vendors~main.a2ccf6d92bf9dbb9bd64.bundle.js.map",
+    "main.js.map": "./main.e434be08e260a75ab142.bundle.js.map",
+    "runtime~main.js": "./runtime~main.e434be08e260a75ab142.bundle.js",
+    "runtime~main.js.map": "./runtime~main.e434be08e260a75ab142.bundle.js.map",
+    "vendors~main.js": "./vendors~main.e434be08e260a75ab142.bundle.js",
+    "vendors~main.js.map": "./vendors~main.e434be08e260a75ab142.bundle.js.map",
     "iframe.html": "./iframe.html",
-    "precache-manifest.38720e207e342db550fbe3e10f1a333a.js": "./precache-manifest.38720e207e342db550fbe3e10f1a333a.js",
+    "precache-manifest.cff0ac1f497fbfe9f5955813bad0b864.js": "./precache-manifest.cff0ac1f497fbfe9f5955813bad0b864.js",
     "service-worker.js": "./service-worker.js",
     "static/media/Menu.4d9b8e1e.svg": "./static/media/Menu.4d9b8e1e.svg",
     "static/media/logo.bd17f8ee.svg": "./static/media/logo.bd17f8ee.svg",
-    "vendors~main.a2ccf6d92bf9dbb9bd64.bundle.js.LICENSE.txt": "./vendors~main.a2ccf6d92bf9dbb9bd64.bundle.js.LICENSE.txt"
+    "vendors~main.e434be08e260a75ab142.bundle.js.LICENSE.txt": "./vendors~main.e434be08e260a75ab142.bundle.js.LICENSE.txt"
   },
   "entrypoints": [
-    "runtime~main.a2ccf6d92bf9dbb9bd64.bundle.js",
-    "vendors~main.a2ccf6d92bf9dbb9bd64.bundle.js",
+    "runtime~main.e434be08e260a75ab142.bundle.js",
+    "vendors~main.e434be08e260a75ab142.bundle.js",
     "static/css/main.96636b33.chunk.css",
-    "main.a2ccf6d92bf9dbb9bd64.bundle.js"
+    "main.e434be08e260a75ab142.bundle.js"
   ]
 }
