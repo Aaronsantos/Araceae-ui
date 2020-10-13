@@ -1,6 +1,6 @@
 {
   "name": "araceae-ui",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "types": "index.d.ts",
   "module": "build/index.js",
   "main": "index.js",
