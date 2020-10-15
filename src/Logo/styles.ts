@@ -7,7 +7,7 @@ export const Container = styled.span`
   align-items: center;
   width: fit-content;
 
-  svg {
+  img {
     width: 70px;
   }
 

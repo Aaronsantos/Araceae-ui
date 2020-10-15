@@ -21,6 +21,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
+    background-color: ${({ theme }) => (theme as TTheme).colors.white}
   }
   h1, h2, h3, h4, h5 {
     font-family: 'Crimson Text', serif;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
-  & > svg {
+  & > img {
     display: none;
   }
 
@@ -13,9 +13,8 @@ export const Container = styled.header`
       margin: 16px;
       align-items: center;
     }
-    & > svg {
+    & > img {
       display: block;
-      height: 100%;
     }
   }
 `;
@@ -70,6 +69,7 @@ export const MenuContainer = styled.nav<{ open?: boolean }>`
       border: 1px solid ${({ theme }) => theme.colors.black};
       transition: transform 0.4s ease;
       position: absolute;
+      z-index: 99999;
       top: 0;
       left: 0;
     }

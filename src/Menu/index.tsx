@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import { ReactComponent as MenuIcon } from '../assets/static/icons/Menu.svg';
+import MenuIcon from '../assets/static/icons/Menu.svg';
 import Logo from '../Logo';
 
 import { Container, MenuContainer } from './styles';
@@ -31,7 +31,15 @@ const Menu: React.FC<MenuProps> = ({ itens = [] }) => {
   }, [node, setOpen]);
   return (
     <Container>
-      <MenuIcon role="button" onClick={() => setOpen(true)} />
+      <img
+        src={MenuIcon}
+        // eslint-disable-next-line jsx-a11y/no-noninteractive-element-to-interactive-role
+        role="button"
+        aria-label="Abrir menu"
+        onClick={() => setOpen(true)}
+        onKeyPress={() => setOpen(true)}
+        tabIndex={0}
+      />
       <MenuContainer ref={node} open={open}>
         <h1>
           <Logo />

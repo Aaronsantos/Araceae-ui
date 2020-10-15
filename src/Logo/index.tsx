@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { ReactComponent as LogoImg } from '../assets/static/img/logo.svg';
+import LogoImg from '../assets/static/img/logo.svg';
 import { Container } from './styles';
 
 const Logo: React.FC = () => {
   return (
     <Container>
-      <LogoImg />
+      <img src={LogoImg} aria-hidden alt="SINT LOGO" />
       <span>SINT</span>
     </Container>
   );
