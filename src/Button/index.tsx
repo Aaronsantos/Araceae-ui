@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <Container color={color} wide={wide} onClick={onClick}>
-      !!!{children}!!!
+      {children}
     </Container>
   );
 };
