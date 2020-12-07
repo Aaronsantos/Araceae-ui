@@ -32,6 +32,7 @@
         "react-hooks",
         "prettier"
     ],
+    "ignorePatterns": ["src/**/*.stories.mdx"],
     "rules": {
       "prettier/prettier": "error",
       "react/jsx-filename-extension": [2, { "extensions": [".ts", ".tsx", "jsx"] }],
