@@ -48,7 +48,7 @@ const Menu: React.FC<MenuProps> = ({ itens = [] }) => {
         <ul>
           {itens.map((el) => (
             <li className={el.selected ? 'enphasis' : ''}>
-              <a href={el.href}>{el.name}</a>
+              <a href={el.href}>* {el.name}</a>
             </li>
           ))}
         </ul>
