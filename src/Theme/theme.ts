@@ -1,9 +1,9 @@
 export default {
   colors: {
-    brand: '#62e6ac',
+    brand: '#F2CC61',
     cta: '#ff8c5f',
     black: '#191919',
-    white: '#fff',
+    white: '#EECFCA',
     gray300: '#e3e3e3',
     gray400: '#e3e3e3',
     gray600: '#a3a3a3',
